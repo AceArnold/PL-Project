@@ -12,20 +12,30 @@ class Grade_Converter:
                     print('1. National System')
                     print('2. GPA System')
                     print('3. Percentage System')
-                    print('4. 4.0 Scale System')
+                    print('4. Letter Scale System')
 
                     self.from_system = input('Enter the number of the grading system you are converting from: ')
+
                     if self.from_system == '1':
-                        self.from_system = 'National System'
+                        print('please enter your grade out of 60')
+                        grade = input('Enter your grade: ')
+
                     elif self.from_system == '2':
-                        self.from_system = 'GPA System'
+                         print('please enter your grade out of 4')
+                         grade = input('Enter your grade: ')
+
                     elif self.from_system == '3':
-                        self.from_system = 'Percentage System'
+                          print('please enter your grade out of 100')
+                          grade = input('Enter your grade: ')
+
                     elif self.from_system == '4':
-                        self.from_system = '4.0 Scale System'
+                        print('please enter your grade out of A-F')
+                        grade = input('Enter your grade: ')
+
                     else:
-                        print('Invalid input. Please try again.')
-                        self.from_system = input('Enter the number of the grading system you are converting from: ')
+                            print('Invalid grading system')
+                            return
+                        
                 
 
                   
